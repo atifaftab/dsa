@@ -13,6 +13,8 @@ public class LinkedListMain {
         System.out.println("------- remove last---------");
         System.out.println("Return Node: " + list.removeLast().value);
         list.printList();
-
+        System.out.println("------- prepend ---------");
+        list.prepend(87);
+        list.printList();
     }
 }

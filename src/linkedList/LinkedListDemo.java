@@ -59,4 +59,16 @@ public class LinkedListDemo {
         length--;
         return temp;
     }
+
+    public void prepend(int value) {
+        Node node = new Node(value);
+        if (head == null) {
+            head = node;
+            tail = null;
+        } else {
+            node.next = head;
+            head = node;
+        }
+        length++;
+    }
 }
