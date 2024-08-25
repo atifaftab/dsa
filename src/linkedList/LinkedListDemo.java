@@ -64,7 +64,7 @@ public class LinkedListDemo {
         Node node = new Node(value);
         if (head == null) {
             head = node;
-            tail = null;
+            tail = node;
         } else {
             node.next = head;
             head = node;
