@@ -10,6 +10,9 @@ public class LinkedListMain {
         list.append(56);
         System.out.println("\nAdding new Node");
         list.printList();
+        System.out.println("------- remove last---------");
+        System.out.println("Return Node: " + list.removeLast().value);
+        list.printList();
 
     }
 }

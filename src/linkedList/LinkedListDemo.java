@@ -41,4 +41,22 @@ public class LinkedListDemo {
         }
         length++;
     }
+
+    public Node removeLast() {
+        if (length == 0 || head == null) return null;
+        Node temp = head;
+        Node pre = head;
+        while (temp.next != null) {
+            pre = temp;
+            temp = temp.next;
+        }
+//        System.out.println("pre.next.value: " + pre.next.value);
+//        System.out.println("temp.value: " + temp.value);
+//        pre.next = null;
+//        tail = pre;
+        tail = pre;
+        tail.next = null;
+        length--;
+        return temp;
+    }
 }
